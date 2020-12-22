@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 .footer {
     padding: 158px 0 86px;
     background: #707070;
@@ -219,4 +223,19 @@ form .form-group:last-child {
 
 .txt-center {
     text-align: center;
+}
+
+.share-form .form .form-row {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.share-form .form .form-group {
+    width: 340px;
+    margin-right: 40px;
+}
+
+.share-form .form .form-group:last-child {
+    margin-right: 0;
 }

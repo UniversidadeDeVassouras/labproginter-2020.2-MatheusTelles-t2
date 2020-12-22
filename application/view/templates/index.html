@@ -10,17 +10,17 @@
 
         <nav class="p_nav margin-y4">
             <ul class="btn-group font-size-default">
-                <li class="item"><a class="button" href="#">Conheça a Linx</a></li>
-                <li class="item"><a class="button" href="#">Ajude o algorítimo</a></li>
-                <li class="item"><a class="button" href="#">Seus produtos</a></li>
-                <li class="item"><a class="button" href="#">Compartilhe</a></li>
+                <li class="item"><a class="button" href="https://www.linx.com.br" target="_blank">Conheça a Linx</a></li>
+                <li class="item"><a class="button" href="#help">Ajude o algorítimo</a></li>
+                <li class="item"><a class="button" href="#products">Seus produtos</a></li>
+                <li class="item"><a class="button" href="#share">Compartilhe</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="container grid-column font-size-small">
         <section class="container_text-content">
-            <h4 class="font-size-l title">
+            <h4 class="font-size-l title" id="help">
                 Ajude o algorítimo a ser mais certeiro
             </h4>
             <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta convallis sollicitudin eu urna. Mauris rhoncus erat sed interdum dignissim. Suspendisse semper pretium consectetur. Praesent bibendum arcu
@@ -66,13 +66,38 @@
             <h4 class="font-size-bigger text-center l-title margin-0">Sua seleção especial</h4>
         </header>
 
-        <!--<section> Produtos </section>-->
+        <section id="products"> Produtos </section>
 
         <section class="txt-center">
             <button id="btn_more-products" class="button button-l font-size-big">Ainda mais produtos
                 aqui!</button>
         </section>
     </article>
+
+    <section class="container">
+        <header>
+            <h4 class="font-size-bigger txt-center l-title margin-0 margin-b2">Compartilhe a novidade</h4>
+            <p class="font-size-default txt-center margin-b2">Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+        </header>
+
+        <section class="share-form" id="share">
+            <form class="form" action="#" method="post">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label class="form-control-label" for="friends_name">Nome do seu amigo:</label>
+                        <input class="form-control" type="text" required name="friends_name" id="friends_name">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-control-label" for="friends_email">E-mail:</label>
+                        <input class="form-control" type="email" required name="friends_email" id="friends_email">
+                    </div>
+                </div>
+                <div class="txt-center margin-y4">
+                    <input class="button button-large font-size-big" type="submit" value="Enviar agora">
+                </div>
+            </form>
+        </section>
+    </section>
 
 </body>
 
