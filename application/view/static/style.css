@@ -96,6 +96,11 @@ a:visited {
     margin: 0 auto 90px;
 }
 
+.margin-y4 {
+    margin-top: 4em;
+    margin-bottom: 4em;
+}
+
 [class*="container grid-column"] {
     display: grid;
     gap: 30px 60px;
@@ -155,4 +160,63 @@ form .form-group:last-child {
 
 .send {
     width: 100%;
+}
+
+.margin-4 {
+    margin-bottom: 4em;
+}
+
+.margin-0 {
+    margin-bottom: 0;
+}
+
+.l-title {
+    display: table;
+    white-space: nowrap;
+}
+
+.l-title:before,
+.l-title:after {
+    border-top: 1px solid #707070;
+    content: "";
+    display: table-cell;
+    position: relative;
+    top: 0.5em;
+    width: 45%;
+}
+
+.l-title:before {
+    right: 1%;
+}
+
+.l-title:after {
+    left: 1%;
+}
+
+.font-size-big {
+    font-size: 16px;
+}
+
+.font-size-bigger {
+    font-size: 18px;
+}
+
+.font-size-l {
+    font-size: 20px;
+}
+
+.font-size-xl {
+    font-size: 40px;
+}
+
+.margin-b2 {
+    margin-bottom: 2em;
+}
+
+.button-l {
+    width: 260px;
+}
+
+.txt-center {
+    text-align: center;
 }
