@@ -239,3 +239,46 @@ form .form-group:last-child {
 .share-form .form .form-group:last-child {
     margin-right: 0;
 }
+
+.grid-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.grid-products .product {
+    width: 200px;
+    margin-bottom: 40px;
+}
+
+.grid-products .product figure {
+    margin: 0 0 10px;
+}
+
+.grid-products .product figure img {
+    width: 200px;
+    height: 150px;
+}
+
+.grid-products .product .product_title {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.grid-products .product .product_description {
+    margin: 0 0 12px;
+}
+
+.grid-products .product .product_price {
+    margin: 0 0 6px;
+}
+
+.grid-products .product .product_atual_price {
+    margin: 0 0 7px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.grid-products .product .product_payment_form {
+    margin: 0 0 10px;
+}

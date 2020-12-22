@@ -66,34 +66,51 @@
             <h4 class="font-size-bigger text-center l-title margin-0">Sua seleção especial</h4>
         </header>
 
-        <section id="products"> Produtos </section>
 
-        <section class="txt-center">
-            <button id="btn_more-products" class="button button-l font-size-big">Ainda mais produtos
+        <section class="grid-products">
+            {% for product in list_of_products%}
+
+            <div class="product">
+                <figure>
+                    <img id="" src='https:{{product.getImage()}}'>
+                </figure>
+                <div class="product_title">{{product.getName()}}</div>
+                <p class="product_description">{{product.getDescription()}}</p>
+                <p class="product_price">De: R${{product.getPrice()}},00 </p>
+                <p class="product_atual_price">Por: R${{product.getAtualPrice()}},00 </p>
+                <p class="product_payment_form margin-y-4">ou {{product.getParcel()}}x de R${{product.getParcelValue()}}0 </p>
+                <a class=" button button-small send font-size-big text-center " href="# " target="_blank " rel="noopener noreferrer ">Comprar</a>
+            </div>
+            {%endfor%}
+        </section>
+
+
+        <section class="txt-center ">
+            <button id="btn_more-products " class="button button-l font-size-big ">Ainda mais produtos
                 aqui!</button>
         </section>
     </article>
 
-    <section class="container">
+    <section class="container ">
         <header>
-            <h4 class="font-size-bigger txt-center l-title margin-0 margin-b2">Compartilhe a novidade</h4>
-            <p class="font-size-default txt-center margin-b2">Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
+            <h4 class="font-size-bigger txt-center l-title margin-0 margin-b2 ">Compartilhe a novidade</h4>
+            <p class="font-size-default txt-center margin-b2 ">Quer que seus amigos também ganhem a lista personalizada deles? Preencha agora!</p>
         </header>
 
-        <section class="share-form" id="share">
-            <form class="form" action="#" method="post">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label class="form-control-label" for="friends_name">Nome do seu amigo:</label>
-                        <input class="form-control" type="text" required name="friends_name" id="friends_name">
+        <section class="share-form " id="share ">
+            <form class="form " action="# " method="post ">
+                <div class="form-row ">
+                    <div class="form-group ">
+                        <label class="form-control-label " for="friends_name ">Nome do seu amigo:</label>
+                        <input class="form-control " type="text " required name="friends_name " id="friends_name ">
                     </div>
-                    <div class="form-group">
-                        <label class="form-control-label" for="friends_email">E-mail:</label>
-                        <input class="form-control" type="email" required name="friends_email" id="friends_email">
+                    <div class="form-group ">
+                        <label class="form-control-label " for="friends_email ">E-mail:</label>
+                        <input class="form-control " type="email " required name="friends_email " id="friends_email ">
                     </div>
                 </div>
-                <div class="txt-center margin-y4">
-                    <input class="button button-large font-size-big" type="submit" value="Enviar agora">
+                <div class="txt-center margin-y4 ">
+                    <input class="button button-large font-size-big " type="submit " value="Enviar agora ">
                 </div>
             </form>
         </section>
