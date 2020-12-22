@@ -81,3 +81,78 @@ a {
 a:visited {
     color: #888;
 }
+
+.font-size-small {
+    font-size: 12px;
+}
+
+.font-size-default {
+    font-size: 14px;
+}
+
+.container {
+    width: calc(100% - 32px);
+    max-width: 920px;
+    margin: 0 auto 90px;
+}
+
+[class*="container grid-column"] {
+    display: grid;
+    gap: 30px 60px;
+    grid-template-columns: 520px auto;
+}
+
+[class*="container grid-column"] .container_text-content .title {
+    font-weight: 400;
+}
+
+[class*="container grid-column"] .container_text-content .description {
+    line-height: 1.5;
+}
+
+form .form-group {
+    margin-bottom: 20px;
+}
+
+form .form-group .form-control-label {
+    display: inline-block;
+    margin-bottom: 7px;
+}
+
+form .form-group .form-control {
+    display: block;
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #707070;
+}
+
+form .form-group .inline-radio {
+    display: inline-block;
+    margin-right: 40px;
+}
+
+form .form-group:last-child {
+    margin-bottom: 0px;
+}
+
+.button {
+    background-color: #fff;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    color: #888;
+    border: 1px solid #707070;
+    border-radius: 4px;
+}
+
+.button-small {
+    padding: 6px;
+}
+
+.button-large {
+    width: 260px;
+}
+
+.send {
+    width: 100%;
+}
